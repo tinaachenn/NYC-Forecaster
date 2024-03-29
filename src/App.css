@@ -1,0 +1,59 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: lightblue;
+}
+
+.App {
+  background-color: hsla(0, 0%, 100%, 0.217);
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: center;
+  /* border: 1px solid #dddddd; */
+}
+
+/* th {
+  background-color: #f2f2f2;
+} */
+
+button {
+  margin: 8px;
+}
+
+.search-bar {
+  margin-right: 5px;
+}
+
+.statsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.statCard {
+  border-radius: 10px;
+  /* border: 1px solid blacks */
+  background-color: whitesmoke;
+  height: 120px;
+  width: 190px;
+  margin: 20px;
+  /* padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px; */
+}
