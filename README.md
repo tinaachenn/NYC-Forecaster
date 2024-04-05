@@ -1,29 +1,23 @@
-# Web Development Project 5 - _NYC 7 Day Forecast_
+# Web Development Project 6 - _NYC 7 Day Forecast_
 
 Submitted by: **Tina Chen**
 
 This web app: **shows some information about the 7 day forecast for NYC**
 
-Time spent: **5** hours spent in total
+Time spent: **8** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **The list displays a list of data fetched using an API call**
-- [x] **Data uses the useEffect React hook and async/await syntax**
-- [x] **The app dashboard includes at least three summary statistics about the data such as**
-  - [x] _total items in the dataset fetched_
-  - [x] _mean max temp_
-  - [x] _mean min temp_
-- [x] **A search bar allows the user to search for an item in the fetched data**
-- [x] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
+- [x] **The app includes at least one unique chart developed using the fetched data that tell an interesting story**
+- [x] **Clicking on an item in the list view displays more details about it**
+- [x] **Clicking on an item has a direct, unique link to that item's detail view page**
 
 The following **optional** features are implemented:
 
-- [x] Multiple filters can be applied simultaneously
-- [x] Filters use different input types such as a text input, a selection, or a slider
-- [ ] The user can enter specific bounds for filter values
+- [ ] The site's customized dashboard contains more content that explains what is interesting about the data
+- [ ] The site allows users to toggle between different data visualizations
 
 The following **additional** features are implemented:
 
@@ -34,14 +28,15 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 <div>
-    <a href="https://www.loom.com/share/cb1fc04eed7f4455b9074fa9c3582fb7">
+    <a href="https://www.loom.com/share/46f79def2baa4b02b2627ebba953c8a7">
       <p>Video Walkthrough</p>
     </a>
-    <p>Video Gif</p>
-    <a href="https://www.loom.com/share/cb1fc04eed7f4455b9074fa9c3582fb7">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/cb1fc04eed7f4455b9074fa9c3582fb7-with-play.gif">
+    <p>Video Gif </p>
+    <a href="https://www.loom.com/share/46f79def2baa4b02b2627ebba953c8a7">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/46f79def2baa4b02b2627ebba953c8a7-with-play.gif">
     </a>
   </div>
+<!-- Replace this with whatever GIF tool you used! -->
 
 GIF created with Loom
 
@@ -49,10 +44,9 @@ GIF created with Loom
 
 Describe any challenges encountered while building the app.
 
-Reading documentation about a new API that I've never used before and using the skills I've learned to figure out
-how to fetch data.
+Had a really really hard time passing data that I already fetched from my app.jsx file to my detailed views. I did not want to constantly refetch data when an item in the list is selected because of the fetch cap on the API I was using. Could not figure out how to pass data to routes and links as it was not explained in class. Thus, I settled on doing it the way it was described in the lab where I had to just refetch the data in each of the detailed views.
 
-Mapping, formatting, and filtering data.
+Also learning how to use js libraries for graphs and data visualization was a bit challenging but got it to work!
 
 ## License
 

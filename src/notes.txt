@@ -1,0 +1,18 @@
+ // Search function
+ const searchItems = (inputString) => {
+  const filteredData = originalWeatherData.filter(data => data.date.includes(inputString));
+  setWeatherData(filteredData);
+};
+
+// Filtering functions
+const filterByDescription = (description) => {
+  const filteredData = originalWeatherData.filter(data => data.weather && data.weather.description.toLowerCase().includes(description.toLowerCase()));
+  setWeatherData(filteredData);
+};
+
+<input type="text" className="search-bar" placeholder="Search Date" onChange={(e) => searchItems(e.target.value)} />
+<button type="button" className="button" onClick={() => filterByDescription("Sunny")}>☀️</button>
+<button type="button" className="button" onClick={() => filterByDescription("Cloudy")}>⛅</button>
+<button type="button" className="button" onClick={() => filterByDescription("Rain")}>🌧️</button>
+<button type="button" className="button" onClick={resetFilters}>Reset</button>
+<WeatherTable weatherData={weatherData} />
